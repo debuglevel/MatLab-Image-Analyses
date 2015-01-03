@@ -1,14 +1,36 @@
 2015-26-03 17:26:10	 Processed 	./pics/dunkelblau 100x100.png	 in 	4.100000	 seconds.
-
 2015-26-03 17:26:47	 Processed 	./pics/dunkelblau 300x300.png	 in 	36.108000	 seconds.
-
 2015-26-03 17:26:50	 Processed 	./pics/rainbow.png	 in 	3.004000	 seconds.
-
 2015-27-03 17:27:27	 Processed 	./pics/rot.png	 in 	35.668000	 seconds.
-
 2015-27-03 17:27:28	 Processed 	./pics/rothaus 10 colors tiny.png	 in 	0.584000	 seconds.
-
 2015-27-03 17:27:32	 Processed 	./pics/rothaus 10 colors.png	 in 	3.936000	 seconds.
-
 2015-28-03 17:28:09	 Processed 	./pics/rothaus 40 colors.png	 in 	36.012000	 seconds.
-
+2015-32-03 17:32:14	 Processed 	./pics/dunkelblau 100x100.png	 in 	3.892000	 seconds.
+2015-32-03 17:32:49	 Processed 	./pics/dunkelblau 300x300.png	 in 	34.824000	 seconds.
+2015-32-03 17:32:49	 Processed 	./pics/rainbow.png	 in 	0.308000	 seconds.
+2015-33-03 17:33:25	 Processed 	./pics/rot.png	 in 	35.208000	 seconds.
+2015-33-03 17:33:25	 Processed 	./pics/rothaus 10 colors tiny.png	 in 	0.304000	 seconds.
+2015-33-03 17:33:30	 Processed 	./pics/rothaus 10 colors.png	 in 	4.072000	 seconds.
+2015-34-03 17:34:04	 Processed 	./pics/rothaus 40 colors.png	 in 	34.580000	 seconds.
+2015-36-03 17:36:52	 Processed 	./pics/dunkelblau 100x100.png	 in 	3.904000	 seconds.
+2015-37-03 17:37:35	 Processed 	./pics/dunkelblau 300x300.png	 in 	37.580000	 seconds.
+2015-37-03 17:37:35	 Processed 	./pics/rainbow.png	 in 	0.300000	 seconds.
+2015-38-03 17:38:12	 Processed 	./pics/rot.png	 in 	35.496000	 seconds.
+2015-38-03 17:38:13	 Processed 	./pics/rothaus 10 colors tiny.png	 in 	0.304000	 seconds.
+2015-38-03 17:38:18	 Processed 	./pics/rothaus 10 colors.png	 in 	4.312000	 seconds.
+2015-38-03 17:38:54	 Processed 	./pics/rothaus 40 colors.png	 in 	35.176000	 seconds.
+2015-42-03 17:42:46	 Processed 	./pics/dunkelblau 100x100.png	 in 	4.084000	 seconds.
+2015-55-03 17:55:21	 Processed 	./pics/dunkelblau 100x100.png	 in 	3.948000	 seconds.
+2015-55-03 17:55:56	 Processed 	./pics/dunkelblau 300x300.png	 in 	34.924000	 seconds.
+2015-55-03 17:55:57	 Processed 	./pics/rainbow.png	 in 	0.204000	 seconds.
+2015-55-03 17:55:57	 Processed 	./pics/rot.png	 in 	0.224000	 seconds.
+2015-55-03 17:55:57	 Processed 	./pics/rothaus 10 colors tiny.png	 in 	0.172000	 seconds.
+2015-55-03 17:55:59	 Processed 	./pics/rothaus 10 colors.png	 in 	2.008000	 seconds.
+2015-56-03 17:56:18	 Processed 	./pics/rothaus 40 colors.png	 in 	18.044000	 seconds.
+2015-59-03 17:59:09	 Processed 	./pics/dunkelblau 100x100.png	 in 	4.136000	 seconds.
+2015-59-03 17:59:42	 Processed 	./pics/dunkelblau 300x300.png	 in 	32.368000	 seconds.
+2015-59-03 17:59:42	 Processed 	./pics/rainbow.png	 in 	0.388000	 seconds.
+2015-59-03 17:59:43	 Processed 	./pics/rot.png	 in 	0.228000	 seconds.
+2015-59-03 17:59:43	 Processed 	./pics/rothaus 10 colors tiny.png	 in 	0.408000	 seconds.
+2015-59-03 17:59:45	 Processed 	./pics/rothaus 10 colors.png	 in 	1.772000	 seconds.
+2015-00-03 18:00:02	 Processed 	./pics/rothaus 40 colors.png	 in 	16.492000	 seconds.

@@ -12,6 +12,10 @@ array_size_x = size(Lab)(1);
 array_size_y = size(Lab)(2);
 Lab = reshape(Lab, [array_size_x * array_size_y, 3]);
 
+% Remove transparent values. Keep only those rows where alpha is 255 (100% non-transparent).
+alpha = reshape(alpha, [array_size_x * array_size_y, 1]);
+Lab = Lab(alpha == 255, :);
+
 % get a list of all our colors defined.
 colors = getDefinedColors();
 
@@ -23,12 +27,12 @@ for i = 1:length(Lab) %% PERF: better idea to iterate through array than "for"?
   nearestColor = cache_getNearestColor(col);
   %printf('Color is %d\n', nearestColor);
   
-  colors(nearestColor).count = colors(nearestColor).count+1; %% PERF: ++ instead?
+  colors(nearestColor).count++;
 end
 
 % print the percentage of each color
+totalCount = sum(cat(1, colors.count));
 for i = 1:length(colors)
-  totalCount = sum(cat(1, colors.count));
   percentage = colors(i).count / totalCount * 100;
   printf('%10s: %3d%%\n', colors(i).name, percentage);
 end

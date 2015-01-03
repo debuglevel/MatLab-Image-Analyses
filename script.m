@@ -24,6 +24,7 @@ for file = files'
   stopwatch.file.end = cputime();
 
   msg = sprintf('%s\t Processed \t%s\t in \t%f\t seconds.\n', datestr(now, 'YYYY-MM-DD HH:MM:SS'), filename, stopwatch.file.end - stopwatch.file.begin);
+  printf(msg);
   logfile("performance.txt", msg);
 
   printf("\n");
