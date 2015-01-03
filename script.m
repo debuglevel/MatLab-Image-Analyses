@@ -1,6 +1,6 @@
 %%% configuration %%%
 picture_directory = "./pics/";
-profiling.on = 1;
+profiling.on = 0;
 
 %%% code %%%
 profile off;
