@@ -1,0 +1,14 @@
+2015-26-03 17:26:10	 Processed 	./pics/dunkelblau 100x100.png	 in 	4.100000	 seconds.
+
+2015-26-03 17:26:47	 Processed 	./pics/dunkelblau 300x300.png	 in 	36.108000	 seconds.
+
+2015-26-03 17:26:50	 Processed 	./pics/rainbow.png	 in 	3.004000	 seconds.
+
+2015-27-03 17:27:27	 Processed 	./pics/rot.png	 in 	35.668000	 seconds.
+
+2015-27-03 17:27:28	 Processed 	./pics/rothaus 10 colors tiny.png	 in 	0.584000	 seconds.
+
+2015-27-03 17:27:32	 Processed 	./pics/rothaus 10 colors.png	 in 	3.936000	 seconds.
+
+2015-28-03 17:28:09	 Processed 	./pics/rothaus 40 colors.png	 in 	36.012000	 seconds.
+

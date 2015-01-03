@@ -1,37 +1,39 @@
-%profile off
+%%% configuration %%%
+picture_directory = "./pics/";
+profiling.on = 1;
 
-profile on
-batch_t = cputime();
-
-colorStatsMain "pics/rothaus40.png";
-
-printf('Total cpu time: %f seconds\n', cputime-batch_t);
-profile off
-data = profile ("info");
-profshow (data, 10);
-return;
-profile off
-data = profile ("info");
-profshow (data, 10);
-
-batch_t = cputime();
-
-files = dir('dir/*.png');
-for file = files'
-    printf("Processing %s...", file.name)
-    fflush(stdout)
-    
-    file_t = cputime();
-    colorStatsMain(file.name);
-    printf('File cpu time: %f seconds\n', cputime-file_t);
-    
-    printf("");
+%%% code %%%
+profile off;
+if (profiling.on == 1)
+  profile on;
 end
 
-printf('Total cpu time: %f seconds\n', cputime-batch_t);
+% get cputime at beginning of script for overall performance measurement
+stopwatch.batch.begin = cputime();
 
+% iterate through all files in the given directory
+files = dir([picture_directory '*.png']);
+for file = files'
+  filename = [picture_directory file.name];
 
+  printf("%s \t Processing %s...\n", datestr(now, 'YYYY-MM-DD HH:MM:SS'), filename)
+  fflush(stdout);  % flush stdout buffer as the next operation takes probably long time
 
-%profile off
-%data = profile ("info");
-%profshow (data, 10);
+  stopwatch.file.begin = cputime();
+  colorStatsMain(filename);
+  stopwatch.file.end = cputime();
+
+  msg = sprintf('%s\t Processed \t%s\t in \t%f\t seconds.\n', datestr(now, 'YYYY-MM-DD HH:MM:SS'), filename, stopwatch.file.end - stopwatch.file.begin);
+  logfile("performance.txt", msg);
+
+  printf("\n");
+end
+
+stopwatch.batch.end = cputime();
+printf('Processed whole batch in %f seconds.\n', stopwatch.batch.end - stopwatch.batch.begin);
+
+if (profiling.on == 1)
+  profile off;
+  data = profile("info");
+  profshow(data, 10);
+end

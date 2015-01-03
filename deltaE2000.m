@@ -20,7 +20,8 @@ de00 = [];
 
 % Error checking to ensure that sample and Std vectors are of correct sizes
 v=size(Labstd); w = size(Labsample);
-if ( v(1) ~= w(1) | v(2) ~= w(2) )
+%if ( v(1) ~= w(1) | v(2) ~= w(2) )
+if ( v(1) ~= w(1) || v(2) ~= w(2) )
   disp('deltaE00: Standard and Sample sizes do not match');
   return
 end % if ( v(1) ~= w(1) | v(2) ~= w(2) )
@@ -35,7 +36,8 @@ if (nargin < 3)
      kl = 1; kc=1; kh =1;
 else
      % Use specified Values of Parametric factors
-     if ( (size(KLCH,1) ~=1) | (size(KLCH,2) ~=3))
+%     if ( (size(KLCH,1) ~=1) | (size(KLCH,2) ~=3))
+     if ( (size(KLCH,1) ~=1) || (size(KLCH,2) ~=3))
        disp('deltaE00: KLCH must be a 1x3  vector');
        return;
     else

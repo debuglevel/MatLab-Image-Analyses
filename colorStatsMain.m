@@ -1,33 +1,36 @@
 function colorStatsMain (filename)
 
+% read image file
 [RGB,map,alpha] = imread(filename);
-% TODO: remove any color that has alpha channel set.
+% TODO: remove any pixel that has alpha channel set.
+
+% convert RGB to L*a*b*-Colorspace
 Lab = RGB2Lab(RGB);
 
-% 3D Array to 2D Array (just a list of 3x color)
-x = size(Lab)(1);
-y = size(Lab)(2);
-Lab = reshape(Lab, [x*y, 3]);
+% convert 3D Array to 2D Array (just a list of 3x color)
+array_size_x = size(Lab)(1);
+array_size_y = size(Lab)(2);
+Lab = reshape(Lab, [array_size_x * array_size_y, 3]);
 
+% get a list of all our colors defined.
 colors = getDefinedColors();
-%colors(:).count = 0;
 
-% foreach color in picture:
+% iterate through each pixel in the picture
 for i = 1:length(Lab) %% PERF: better idea to iterate through array than "for"?
-  %sprintf('Processing pixel no. %d', i);
   col = Lab(i,:);
   
+  % fetch the nearest color (use a cache proxy which looks up the color if already calculated instead of calculting it again)
   nearestColor = cache_getNearestColor(col);
-  %sprintf('Color is %s', nearestColor.name);
-  %sprintf('Color is %d', nearestColor);
+  %printf('Color is %d\n', nearestColor);
+  
   colors(nearestColor).count = colors(nearestColor).count+1; %% PERF: ++ instead?
-  %sprintf('');
 end
 
-%deltaE2000(Lab);
-
+% print the percentage of each color
 for i = 1:length(colors)
-  sprintf('%s: %d', colors(i).name, colors(i).count)
+  totalCount = sum(cat(1, colors.count));
+  percentage = colors(i).count / totalCount * 100;
+  printf('%10s: %3d%%\n', colors(i).name, percentage);
 end
 
 endfunction

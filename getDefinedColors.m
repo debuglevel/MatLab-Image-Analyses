@@ -1,6 +1,6 @@
 function colors = getDefinedColors ()
 
-i=0;
+i = 0;
 
 colors(++i) = createColor("blau", 0, 0, 255);
 colors(++i) = createColor("gruen", 0, 255, 0);
