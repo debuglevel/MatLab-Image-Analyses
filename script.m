@@ -3,13 +3,16 @@
 profile on
 batch_t = cputime();
 
-colorStatsMain "pics/dunkelblau.png";
+colorStatsMain "pics/rothaus40.png";
 
 printf('Total cpu time: %f seconds\n', cputime-batch_t);
 profile off
 data = profile ("info");
 profshow (data, 10);
 return;
+profile off
+data = profile ("info");
+profshow (data, 10);
 
 batch_t = cputime();
 

@@ -7,9 +7,6 @@ for i = 1:length(colors)
   labColor = [L, a, b];
    
   colorDistance(i).name = colors.name;
-  
-  % big performance bottleneck: calculating deltaE2000 is incredible slow.
-  % TODO: cache the results for a given color and fetch it instead of calculating
   colorDistance(i).distance = deltaE2000(color, labColor);
 end
 
