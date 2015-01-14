@@ -16,14 +16,14 @@ files = dir([picture_directory '*.png']);
 for file = files'
   filename = [picture_directory file.name];
 
-  printf("%s \t Processing %s...\n", datestr(now, 'YYYY-MM-DD HH:MM:SS'), filename)
+  printf("%s \t Processing %s...\n", datestr(now, 'YYYY-mm-DD HH:MM:SS'), filename)
   fflush(stdout);  % flush stdout buffer as the next operation takes probably long time
 
   stopwatch.file.begin = cputime();
   colorStatsMain(filename);
   stopwatch.file.end = cputime();
 
-  msg = sprintf('%s\t Processed \t%s\t in \t%f\t seconds.\n', datestr(now, 'YYYY-MM-DD HH:MM:SS'), filename, stopwatch.file.end - stopwatch.file.begin);
+  msg = sprintf('%s\t Processed \t%s\t in \t%f\t seconds.\n', datestr(now, 'YYYY-mm-DD HH:MM:SS'), filename, stopwatch.file.end - stopwatch.file.begin);
   printf(msg);
   logfile("performance.txt", msg);
 
