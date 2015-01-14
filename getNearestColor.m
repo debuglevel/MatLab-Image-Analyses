@@ -37,8 +37,8 @@ labColors = repmat(labColors, colorsCount, 1);
 
 
 % calculcate the color distance of each pair
-%colorDistances = deltaE2000(colors, labColors); % 27 seconds
-colorDistances = cie00de(colors, labColors);   % 33 seconds
+colorDistances = deltaE2000(colors, labColors); % 27 seconds
+%colorDistances = cie00de(colors, labColors);   % 33 seconds
 %colorDistances = cie94de(colors, labColors);   % 22 seconds
 colorDistances = transpose(colorDistances);
 % result:
