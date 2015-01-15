@@ -1,6 +1,6 @@
 function labColors = getNearestColor (colors)
 
-colorsCount = length(colors);
+[colorsCount, unused] = size(colors);
 
 % get the list of our colors defined.
 definedColors = getDefinedColorsLab();
