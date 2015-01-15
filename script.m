@@ -16,7 +16,7 @@ files = dir([picture_directory '*.png']);
 for file = files'
   filename = [picture_directory file.name];
 
-  printf("%s \t Processing %s...\n", datestr(now, 'YYYY-mm-DD HH:MM:SS'), filename)
+  printf("%s \t Processing \t%s ...\n", datestr(now, 'YYYY-mm-DD HH:MM:SS'), filename)
   fflush(stdout);  % flush stdout buffer as the next operation takes probably long time
 
   stopwatch.file.begin = cputime();

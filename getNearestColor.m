@@ -55,7 +55,10 @@ colorDistances = reshape(colorDistances, [], colorsCount);
 % 1.2*  2.8   3.2*
 % 1.6   2.4*  3.5
 
-logicals = (min(colorDistances) == colorDistances);
+minimumColorDistance = min(colorDistances);
+minimumColorDistanceEqualMatrix = repmat(minimumColorDistance, definedColorsCount, 1);
+logicals = (minimumColorDistanceEqualMatrix == colorDistances);
+%logicals = (min(colorDistances) == colorDistances); % emmits a warning
 % result:
 % 1     0     1
 % 0     1     0

@@ -324,3 +324,47 @@
 2015-01-14 18:01:51	 Processed 	./pics/schwarz.png	 in 	1.810000	 seconds.
 2015-01-14 18:01:52	 Processed 	./pics/spezial.png	 in 	0.344000	 seconds.
 2015-01-14 18:01:54	 Processed 	./pics/weiss.png	 in 	1.653000	 seconds.
+2015-01-15 13:13:35	 Processed 	./pics/blau.png	 in 	1.966000	 seconds.
+2015-01-15 13:13:35	 Processed 	./pics/dunkelblau 100x100.png	 in 	0.265000	 seconds.
+2015-01-15 13:13:37	 Processed 	./pics/dunkelblau 300x300.png	 in 	1.966000	 seconds.
+2015-01-15 13:13:38	 Processed 	./pics/fässla.png	 in 	0.609000	 seconds.
+2015-01-15 13:13:40	 Processed 	./pics/gelb.png	 in 	1.950000	 seconds.
+2015-01-15 13:13:40	 Processed 	./pics/gleichverteilung.png	 in 	0.046000	 seconds.
+2015-01-15 13:13:43	 Processed 	./pics/gruen.png	 in 	2.106000	 seconds.
+2015-01-15 13:13:51	 Processed 	./pics/jever.png	 in 	7.659000	 seconds.
+2015-01-15 13:13:51	 Processed 	./pics/noise.png	 in 	0.077000	 seconds.
+2015-01-15 13:14:02	 Processed 	./pics/blau.png	 in 	2.013000	 seconds.
+2015-01-15 13:14:02	 Processed 	./pics/dunkelblau 100x100.png	 in 	0.280000	 seconds.
+2015-01-15 13:14:13	 Processed 	./pics/blau.png	 in 	1.903000	 seconds.
+2015-01-15 13:14:13	 Processed 	./pics/dunkelblau 100x100.png	 in 	0.265000	 seconds.
+2015-01-15 13:14:23	 Processed 	./pics/blau.png	 in 	1.903000	 seconds.
+2015-01-15 13:14:23	 Processed 	./pics/dunkelblau 100x100.png	 in 	0.234000	 seconds.
+2015-01-15 13:19:11	 Processed 	./pics/blau.png	 in 	2.668000	 seconds.
+2015-01-15 13:19:12	 Processed 	./pics/dunkelblau 100x100.png	 in 	0.280000	 seconds.
+2015-01-15 13:19:16	 Processed 	./pics/dunkelblau 300x300.png	 in 	2.262000	 seconds.
+2015-01-15 13:19:18	 Processed 	./pics/fässla.png	 in 	0.609000	 seconds.
+2015-01-15 13:19:22	 Processed 	./pics/gelb.png	 in 	2.294000	 seconds.
+2015-01-15 13:19:22	 Processed 	./pics/gleichverteilung.png	 in 	0.062000	 seconds.
+2015-01-15 13:19:26	 Processed 	./pics/gruen.png	 in 	2.262000	 seconds.
+2015-01-15 13:19:35	 Processed 	./pics/jever.png	 in 	6.458000	 seconds.
+2015-01-15 13:19:35	 Processed 	./pics/noise.png	 in 	0.062000	 seconds.
+2015-01-15 13:19:38	 Processed 	./pics/noise2.png	 in 	1.888000	 seconds.
+2015-01-15 13:19:39	 Processed 	./pics/paulaner.png	 in 	0.593000	 seconds.
+2015-01-15 13:19:42	 Processed 	./pics/rot.png	 in 	2.246000	 seconds.
+2015-01-15 13:19:44	 Processed 	./pics/rothaus 40 colors.png	 in 	1.108000	 seconds.
+2015-01-15 13:19:45	 Processed 	./pics/rothaus original.png	 in 	1.280000	 seconds.
+2015-01-15 13:19:48	 Processed 	./pics/schwarz.png	 in 	2.137000	 seconds.
+2015-01-15 13:20:10	 Processed 	./pics/rothaus original.png	 in 	1.139000	 seconds.
+2015-01-15 13:20:32	 Processed 	./pics/rothaus original.png	 in 	1.294000	 seconds.
+2015-01-15 13:21:02	 Processed 	./pics/rothaus original.png	 in 	1.357000	 seconds.
+2015-01-15 13:24:23	 Processed 	./pics/rothaus original.png	 in 	6.786000	 seconds.
+2015-01-15 13:24:36	 Processed 	./pics/rothaus original.png	 in 	1.357000	 seconds.
+2015-01-15 13:25:33	 Processed 	./pics/rothaus original.png	 in 	1.357000	 seconds.
+2015-01-15 13:26:41	 Processed 	./pics/rothaus original.png	 in 	1.356000	 seconds.
+2015-01-15 13:27:46	 Processed 	./pics/rothaus original.png	 in 	20.733000	 seconds.
+2015-01-15 13:29:20	 Processed 	./pics/rothaus original.png	 in 	2.465000	 seconds.
+2015-01-15 13:30:22	 Processed 	./pics/rothaus original.png	 in 	1.326000	 seconds.
+2015-01-15 13:30:52	 Processed 	./pics/rothaus original.png	 in 	1.248000	 seconds.
+2015-01-15 13:33:11	 Processed 	./pics/rothaus original.png	 in 	1.311000	 seconds.
+2015-01-15 13:33:41	 Processed 	./pics/rothaus original.png	 in 	1.295000	 seconds.
+2015-01-15 13:33:54	 Processed 	./pics/rothaus original.png	 in 	1.310000	 seconds.
