@@ -12,7 +12,7 @@ end
 stopwatch.batch.begin = cputime();
 
 % iterate through all files in the given directory
-files = dir([picture_directory '*.png']);
+files = dir([picture_directory '*.*']);
 for file = files'
   filename = [picture_directory file.name];
 
