@@ -15,31 +15,49 @@ Lab = reshape(Lab, [array_size_x * array_size_y, 3]);
 alpha = reshape(alpha, [array_size_x * array_size_y, 1]);
 Lab = Lab(alpha != 0, :);
 
-% get a list of each colors best matching defined color.
-nearestColors = getNearestColor(Lab);
 
-[nearestColors, unused, count] = unique(nearestColors, 'rows');
-nearestColors = [nearestColors accumarray(count,1)];
+% NEW: aggregate same colors and count them
+
+% Lab:        A x 3 matrix (A pixels; pixel = 3 columns of L*a*b color information)
+% uniqueLab:  B x 3 matrix (B unique pixels, sorted ascending)
+% index:      A x 1 vector (index vector "where is this value in the new vector?")
+[uniqueLab, unused, index] = unique(Lab, 'rows');
+% aggregatedCounts:   B x 1 vector (count of the B unique pixels)
+count = [accumarray(index, 1)];
+% uniqueLabWithCount: B x 4 matrix (B unique pixels and their count)
+uniqueLabWithCount = [uniqueLab count];
+
+
+% get a list of each colors best matching defined color.
+
+% nearestColor:    B x 3 matrix (uniqueLab transformed to their nearest L*a*b colors, not unique, same sorting)
+nearestColor = getNearestColor(uniqueLab);
+% nearestColorWithCount: B x 4 matrix (nearest colors and their count)
+nearestColorWithCount = [nearestColor count];
+
+% uniqueNearestColorWithCount: C x 4 matrix (unique nearest colors and their count)
+[uniqueNearestColor, unused, index] = unique(nearestColor, 'rows');
+uniqueNearestColorWithCount = [uniqueNearestColor accumarray(index, count)];
 
 % get a list of all our colors defined.
 definedColors = getDefinedColorsLab();
-totalCount = sum(nearestColors(:, 4));
+totalCount = sum(uniqueNearestColorWithCount(:, 4));
 for i = 1:length(definedColors)
   
   L = definedColors(i).L;
   a = definedColors(i).a;
   b = definedColors(i).b;
   
-  nearestColor = ...    
-  nearestColors(            ...
-    nearestColors(:,1)==L & ...
-    nearestColors(:,2)==a & ...
-    nearestColors(:,3)==b   ...
+  color = ...    
+  uniqueNearestColorWithCount(            ...
+    uniqueNearestColorWithCount(:,1)==L & ...
+    uniqueNearestColorWithCount(:,2)==a & ...
+    uniqueNearestColorWithCount(:,3)==b   ...
     , :);
     
   % check if the defined color is used at all  
-  if (size(nearestColor, 1) != 0)
-    count = nearestColor(4);
+  if (size(color, 1) != 0)
+    count = color(4);
     
     %printf('%10s: %d\n', definedColors(i).name, count);
     

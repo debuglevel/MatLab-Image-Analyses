@@ -385,3 +385,43 @@
 2015-01-15 13:44:58	 Processed 	./pics/schwarz.png	 in 	2.199000	 seconds.
 2015-01-15 13:44:59	 Processed 	./pics/spezial.png	 in 	0.483000	 seconds.
 2015-01-15 13:45:01	 Processed 	./pics/weiss.png	 in 	2.029000	 seconds.
+2015-01-15 13:48:06	 Processed 	./pics/rothaus 40 colors.png	 in 	4.165000	 seconds.
+2015-01-15 13:51:15	 Processed 	./pics/rothaus 40 colors.png	 in 	1.374000	 seconds.
+2015-01-15 13:52:17	 Processed 	./pics/rothaus 40 colors.png	 in 	1.372000	 seconds.
+2015-01-15 13:54:51	 Processed 	./pics/rothaus 40 colors.png	 in 	0.438000	 seconds.
+2015-01-15 13:55:06	 Processed 	./pics/rothaus 40 colors.png	 in 	0.437000	 seconds.
+2015-01-15 20:39:36	 Processed 	./pics/rothaus 40 colors.png	 in 	0.392000	 seconds.
+2015-01-15 20:39:40	 Processed 	./pics/rothaus 40 colors.png	 in 	0.292000	 seconds.
+2015-01-15 20:40:35	 Processed 	./pics/rothaus 40 colors.png	 in 	0.284000	 seconds.
+2015-01-15 20:40:57	 Processed 	./pics/rothaus 40 colors.png	 in 	0.296000	 seconds.
+2015-01-15 20:41:21	 Processed 	./pics/rothaus 40 colors.png	 in 	0.292000	 seconds.
+2015-01-15 20:42:24	 Processed 	./pics/rothaus 40 colors.png	 in 	0.380000	 seconds.
+2015-01-15 20:42:56	 Processed 	./pics/rothaus 40 colors.png	 in 	0.292000	 seconds.
+2015-01-15 20:43:05	 Processed 	./pics/rothaus 40 colors.png	 in 	0.296000	 seconds.
+2015-01-15 20:43:16	 Processed 	./pics/rothaus 40 colors.png	 in 	0.304000	 seconds.
+2015-01-15 20:43:51	 Processed 	./pics/rothaus 40 colors.png	 in 	0.288000	 seconds.
+2015-01-15 20:44:00	 Processed 	./pics/rothaus 40 colors.png	 in 	0.288000	 seconds.
+2015-01-15 20:44:14	 Processed 	./pics/rothaus 40 colors.png	 in 	0.292000	 seconds.
+2015-01-15 20:44:57	 Processed 	./pics/rothaus 40 colors.png	 in 	0.292000	 seconds.
+2015-01-15 20:45:49	 Processed 	./pics/rothaus 40 colors.png	 in 	0.296000	 seconds.
+2015-01-15 20:47:20	 Processed 	./pics/rothaus 40 colors.png	 in 	0.292000	 seconds.
+2015-01-15 20:47:35	 Processed 	./pics/rothaus 40 colors.png	 in 	0.292000	 seconds.
+2015-01-15 20:48:27	 Processed 	./pics/rothaus 40 colors.png	 in 	0.288000	 seconds.
+2015-01-15 20:55:15	 Processed 	./pics/rothaus 40 colors.png	 in 	0.384000	 seconds.
+2015-01-15 20:55:55	 Processed 	./pics/rothaus 40 colors.png	 in 	0.288000	 seconds.
+2015-01-15 21:01:08	 Processed 	./pics/rothaus 40 colors.png	 in 	0.296000	 seconds.
+2015-01-15 21:01:48	 Processed 	./pics/rothaus 40 colors.png	 in 	0.392000	 seconds.
+2015-01-15 21:02:14	 Processed 	./pics/rothaus 40 colors.png	 in 	0.300000	 seconds.
+2015-01-15 21:03:18	 Processed 	./pics/rothaus 40 colors.png	 in 	0.296000	 seconds.
+2015-01-15 21:12:25	 Processed 	./pics/rothaus 40 colors.png	 in 	0.300000	 seconds.
+2015-01-15 22:19:53	 Processed 	./pics/rothaus 40 colors.png	 in 	0.364000	 seconds.
+2015-01-15 22:25:02	 Processed 	./pics/rothaus 40 colors.png	 in 	0.300000	 seconds.
+2015-01-15 22:25:22	 Processed 	./pics/rothaus 40 colors.png	 in 	0.300000	 seconds.
+2015-01-15 22:25:47	 Processed 	./pics/rothaus 40 colors.png	 in 	0.296000	 seconds.
+2015-01-15 22:26:04	 Processed 	./pics/rothaus 40 colors.png	 in 	0.300000	 seconds.
+2015-01-15 22:26:26	 Processed 	./pics/rothaus 40 colors.png	 in 	0.300000	 seconds.
+2015-01-15 22:26:41	 Processed 	./pics/rothaus 40 colors.png	 in 	0.296000	 seconds.
+2015-01-15 22:27:14	 Processed 	./pics/rothaus 40 colors.png	 in 	0.308000	 seconds.
+2015-01-15 22:28:28	 Processed 	./pics/rothaus 40 colors.png	 in 	0.292000	 seconds.
+2015-01-15 22:28:36	 Processed 	./pics/rothaus 40 colors.png	 in 	0.304000	 seconds.
+2015-01-15 22:33:45	 Processed 	./pics/rothaus 40 colors.png	 in 	0.316000	 seconds.
