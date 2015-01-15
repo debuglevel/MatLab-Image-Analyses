@@ -5,6 +5,7 @@ function colorStatsMain (filename)
 
 % convert RGB to L*a*b*-Colorspace
 Lab = RGB2Lab(RGB);
+RGB = []; % free memory
 
 % convert 3D Array to 2D Array (just a list of 3x color)
 array_size_x = size(Lab)(1);
@@ -17,6 +18,8 @@ if (alpha_size_x != 0 && alpha_size_y != 0)
   alpha = reshape(alpha, [array_size_x * array_size_y, 1]);
   Lab = Lab(alpha != 0, :);
 end
+map = []; % free memory
+alpha = []; % free memory
 
 % NEW: aggregate same colors and count them
 
@@ -24,6 +27,7 @@ end
 % uniqueLab:  B x 3 matrix (B unique pixels, sorted ascending)
 % index:      A x 1 vector (index vector "where is this value in the new vector?")
 [uniqueLab, unused, index] = unique(Lab, 'rows');
+Lab = []; % free memory
 % aggregatedCounts:   B x 1 vector (count of the B unique pixels)
 count = [accumarray(index, 1)];
 % uniqueLabWithCount: B x 4 matrix (B unique pixels and their count)
