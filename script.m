@@ -1,8 +1,27 @@
+% script  main file to compute the CIELAB 2000 color difference between given files and predefined colors.
+% iterates through the pics directory and processes all files in sequence
+%
+% created by: Marc V. Kohaupt
+% Licence: Creative Commons Zero / public domain
+% last change and history: see version control system
+% created with Octave 3.8.2 i686-w64-mingw32
+
+%%%%%%%%%%%%%%%%%%%%%
 %%% configuration %%%
+%%%%%%%%%%%%%%%%%%%%%
+
+% the directory where the pictures are stored
 picture_directory = "./pics/";
+
+% whether the code should be profiled regarding CPU time needed
+% (the cpu time for the whole batch and per file will always be logged)
 profiling.on = 0;
 
+
+%%%%%%%%%%%%
 %%% code %%%
+%%%%%%%%%%%%
+
 profile off;
 if (profiling.on == 1)
   profile on;

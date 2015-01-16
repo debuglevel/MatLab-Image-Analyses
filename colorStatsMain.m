@@ -1,7 +1,17 @@
 function colorStatsMain (filename)
+% colorStatsMain  main function to process a given file
+%
+% SYNOPSIS: colorStatsMain(filename)
+%
+% INPUT filename: path to the picture to process
+%
+% created by: Marc V. Kohaupt
+% Licence: Creative Commons Zero / public domain
+% last change and history: see version control system
+% created with Octave 3.8.2 i686-w64-mingw32
 
 % read image file
-[RGB,map,alpha] = imread(filename);
+[RGB, map, alpha] = imread(filename);
 
 % convert RGB to L*a*b*-Colorspace
 Lab = RGB2Lab(RGB);
@@ -21,7 +31,6 @@ end
 map = []; % free memory
 alpha = []; % free memory
 
-% NEW: aggregate same colors and count them
 
 % Lab:        A x 3 matrix (A pixels; pixel = 3 columns of L*a*b color information)
 % uniqueLab:  B x 3 matrix (B unique pixels, sorted ascending)

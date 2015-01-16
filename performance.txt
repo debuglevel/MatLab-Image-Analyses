@@ -425,3 +425,91 @@
 2015-01-15 22:28:28	 Processed 	./pics/rothaus 40 colors.png	 in 	0.292000	 seconds.
 2015-01-15 22:28:36	 Processed 	./pics/rothaus 40 colors.png	 in 	0.304000	 seconds.
 2015-01-15 22:33:45	 Processed 	./pics/rothaus 40 colors.png	 in 	0.316000	 seconds.
+2015-01-15 22:59:33	 Processed 	./pics/blau.png	 in 	0.284000	 seconds.
+2015-01-15 22:59:33	 Processed 	./pics/dunkelblau 100x100.png	 in 	0.088000	 seconds.
+2015-01-15 22:59:33	 Processed 	./pics/dunkelblau 300x300.png	 in 	0.316000	 seconds.
+2015-01-15 22:59:34	 Processed 	./pics/fässla.png	 in 	0.188000	 seconds.
+2015-01-15 22:59:34	 Processed 	./pics/gelb.png	 in 	0.292000	 seconds.
+2015-01-15 22:59:34	 Processed 	./pics/gleichverteilung.png	 in 	0.096000	 seconds.
+2015-01-15 22:59:35	 Processed 	./pics/gruen.png	 in 	0.428000	 seconds.
+2015-01-15 22:59:36	 Processed 	./pics/jever.png	 in 	1.200000	 seconds.
+2015-01-15 22:59:36	 Processed 	./pics/noise.png	 in 	0.076000	 seconds.
+2015-01-15 22:59:38	 Processed 	./pics/noise2.png	 in 	1.708000	 seconds.
+2015-01-15 22:59:38	 Processed 	./pics/paulaner.png	 in 	0.124000	 seconds.
+2015-01-15 22:59:38	 Processed 	./pics/rot.png	 in 	0.276000	 seconds.
+2015-01-15 22:59:38	 Processed 	./pics/rothaus 40 colors.png	 in 	0.280000	 seconds.
+2015-01-15 22:59:39	 Processed 	./pics/rothaus original.png	 in 	0.656000	 seconds.
+2015-01-15 22:59:39	 Processed 	./pics/schwarz.png	 in 	0.236000	 seconds.
+2015-01-15 22:59:40	 Processed 	./pics/spezial.png	 in 	0.320000	 seconds.
+2015-01-15 22:59:40	 Processed 	./pics/weiss.png	 in 	0.276000	 seconds.
+2015-01-15 23:00:19	 Processed 	./pics/blau.png	 in 	0.296000	 seconds.
+2015-01-15 23:00:19	 Processed 	./pics/dunkelblau 100x100.png	 in 	0.108000	 seconds.
+2015-01-15 23:00:19	 Processed 	./pics/dunkelblau 300x300.png	 in 	0.324000	 seconds.
+2015-01-15 23:00:19	 Processed 	./pics/fässla.png	 in 	0.192000	 seconds.
+2015-01-15 23:00:20	 Processed 	./pics/gelb.png	 in 	0.292000	 seconds.
+2015-01-15 23:00:20	 Processed 	./pics/gleichverteilung.png	 in 	0.084000	 seconds.
+2015-01-15 23:00:20	 Processed 	./pics/gruen.png	 in 	0.304000	 seconds.
+2015-01-15 23:00:21	 Processed 	./pics/jever.png	 in 	1.204000	 seconds.
+2015-01-15 23:00:21	 Processed 	./pics/noise.png	 in 	0.088000	 seconds.
+2015-01-15 23:00:23	 Processed 	./pics/noise2.png	 in 	1.728000	 seconds.
+2015-01-15 23:00:23	 Processed 	./pics/paulaner.png	 in 	0.136000	 seconds.
+2015-01-15 23:00:24	 Processed 	./pics/rot.png	 in 	0.296000	 seconds.
+2015-01-15 23:00:24	 Processed 	./pics/rothaus 40 colors.png	 in 	0.292000	 seconds.
+2015-01-15 23:00:25	 Processed 	./pics/rothaus original.png	 in 	0.676000	 seconds.
+2015-01-15 23:00:25	 Processed 	./pics/schwarz.png	 in 	0.244000	 seconds.
+2015-01-15 23:00:25	 Processed 	./pics/spezial.png	 in 	0.316000	 seconds.
+2015-01-15 23:00:26	 Processed 	./pics/weiss.png	 in 	0.288000	 seconds.
+2015-01-15 23:15:29	 Processed 	./pics/1772814.jpg	 in 	1.136000	 seconds.
+2015-01-15 23:15:30	 Processed 	./pics/1914210.jpg	 in 	0.552000	 seconds.
+2015-01-15 23:15:30	 Processed 	./pics/Nice-pink-flowers-with-water-drops.jpg	 in 	0.332000	 seconds.
+2015-01-15 23:15:31	 Processed 	./pics/flower-meadow-20392-20902-hd-wallpapers.jpg	 in 	0.412000	 seconds.
+2015-01-15 23:15:31	 Processed 	./pics/flowers-3.jpg	 in 	0.452000	 seconds.
+2015-01-15 23:15:35	 Processed 	./pics/flowers-lavender-purple-field-motion-blur-nature.jpg	 in 	2.928000	 seconds.
+2015-01-15 23:16:28	 Processed 	./pics/1772814.jpg	 in 	1.124000	 seconds.
+2015-01-15 23:16:43	 Processed 	./pics/1772814.jpg	 in 	1.124000	 seconds.
+2015-01-15 23:16:43	 Processed 	./pics/gleichverteilung.png	 in 	0.040000	 seconds.
+2015-01-15 23:16:59	 Processed 	./pics/1772814.jpg	 in 	1.136000	 seconds.
+2015-01-15 23:16:59	 Processed 	./pics/gleichverteilung.png	 in 	0.036000	 seconds.
+2015-01-15 23:17:07	 Processed 	./pics/1772814.jpg	 in 	1.144000	 seconds.
+2015-01-15 23:17:07	 Processed 	./pics/gleichverteilung.png	 in 	0.036000	 seconds.
+2015-01-15 23:18:09	 Processed 	./pics/1772814.jpg	 in 	1.116000	 seconds.
+2015-01-15 23:18:09	 Processed 	./pics/gleichverteilung.png	 in 	0.044000	 seconds.
+2015-01-15 23:22:09	 Processed 	./pics/1772814.jpg	 in 	23.852000	 seconds.
+2015-01-15 23:22:09	 Processed 	./pics/gleichverteilung.png	 in 	0.064000	 seconds.
+2015-01-15 23:27:17	 Processed 	./pics/1772814.jpg	 in 	22.440000	 seconds.
+2015-01-15 23:27:25	 Processed 	./pics/1914210.jpg	 in 	8.052000	 seconds.
+2015-01-15 23:27:44	 Processed 	./pics/Nice-pink-flowers-with-water-drops.jpg	 in 	18.784000	 seconds.
+2015-01-15 23:27:58	 Processed 	./pics/flower-meadow-20392-20902-hd-wallpapers.jpg	 in 	13.632000	 seconds.
+2015-01-15 23:28:10	 Processed 	./pics/flowers-3.jpg	 in 	12.280000	 seconds.
+2015-01-15 23:33:22	 Processed 	./pics/1772814.jpg	 in 	21.808000	 seconds.
+2015-01-15 23:33:30	 Processed 	./pics/1914210.jpg	 in 	8.016000	 seconds.
+2015-01-15 23:33:48	 Processed 	./pics/Nice-pink-flowers-with-water-drops.jpg	 in 	17.780000	 seconds.
+2015-01-15 23:34:01	 Processed 	./pics/flower-meadow-20392-20902-hd-wallpapers.jpg	 in 	13.668000	 seconds.
+2015-01-15 23:34:14	 Processed 	./pics/flowers-3.jpg	 in 	12.168000	 seconds.
+2015-01-16 09:34:18	 Processed 	./pics/1772814.jpg	 in 	24.664000	 seconds.
+2015-01-16 09:34:28	 Processed 	./pics/1914210.jpg	 in 	9.219000	 seconds.
+2015-01-16 09:34:48	 Processed 	./pics/Nice-pink-flowers-with-water-drops.jpg	 in 	17.785000	 seconds.
+2015-01-16 09:35:04	 Processed 	./pics/flower-meadow-20392-20902-hd-wallpapers.jpg	 in 	15.116000	 seconds.
+2015-01-16 09:35:19	 Processed 	./pics/flowers-3.jpg	 in 	13.853000	 seconds.
+2015-01-16 09:36:50	 Processed 	./pics/1772814.jpg	 in 	25.163000	 seconds.
+2015-01-16 09:37:06	 Processed 	./pics/1914210.jpg	 in 	11.233000	 seconds.
+2015-01-16 09:37:34	 Processed 	./pics/Nice-pink-flowers-with-water-drops.jpg	 in 	21.075000	 seconds.
+2015-01-16 09:37:56	 Processed 	./pics/flower-meadow-20392-20902-hd-wallpapers.jpg	 in 	18.502000	 seconds.
+2015-01-16 09:38:19	 Processed 	./pics/flowers-3.jpg	 in 	17.114000	 seconds.
+2015-01-16 11:25:15	 Processed 	./pics/blau.png	 in 	0.578000	 seconds.
+2015-01-16 11:25:15	 Processed 	./pics/dunkelblau 100x100.png	 in 	0.077000	 seconds.
+2015-01-16 11:25:16	 Processed 	./pics/dunkelblau 300x300.png	 in 	0.328000	 seconds.
+2015-01-16 11:25:16	 Processed 	./pics/f�ssla.png	 in 	0.203000	 seconds.
+2015-01-16 11:25:16	 Processed 	./pics/gelb.png	 in 	0.343000	 seconds.
+2015-01-16 11:25:16	 Processed 	./pics/gleichverteilung.png	 in 	0.015000	 seconds.
+2015-01-16 11:25:17	 Processed 	./pics/gruen.png	 in 	0.359000	 seconds.
+2015-01-16 11:25:18	 Processed 	./pics/jever.png	 in 	1.420000	 seconds.
+2015-01-16 11:25:18	 Processed 	./pics/noise.png	 in 	0.047000	 seconds.
+2015-01-16 11:25:20	 Processed 	./pics/noise2.png	 in 	1.669000	 seconds.
+2015-01-16 11:25:21	 Processed 	./pics/paulaner.png	 in 	0.125000	 seconds.
+2015-01-16 11:25:21	 Processed 	./pics/rot.png	 in 	0.359000	 seconds.
+2015-01-16 11:25:21	 Processed 	./pics/rothaus 40 colors.png	 in 	0.327000	 seconds.
+2015-01-16 11:25:22	 Processed 	./pics/rothaus original.png	 in 	0.733000	 seconds.
+2015-01-16 11:25:23	 Processed 	./pics/schwarz.png	 in 	0.297000	 seconds.
+2015-01-16 11:25:23	 Processed 	./pics/spezial.png	 in 	0.328000	 seconds.
+2015-01-16 11:25:23	 Processed 	./pics/weiss.png	 in 	0.233000	 seconds.

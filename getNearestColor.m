@@ -1,4 +1,16 @@
 function labColors = getNearestColor (colors)
+% getNearestColor  gets a list of the nearest predefined L*a*b* colors
+%
+% SYNOPSIS: labColors = getNearestColor(colors)
+%
+% INPUT colors: L*a*b* colors to get the nearest color for (N x 3 matrix)
+%
+% OUTPUT color: N x 3 matrix where the original L*a*b* colors are replaced with their nearest L*a*b* color
+%
+% created by: Marc V. Kohaupt
+% Licence: Creative Commons Zero / public domain
+% last change and history: see version control system
+% created with Octave 3.8.2 i686-w64-mingw32
 
 [colorsCount, unused] = size(colors);
 
@@ -58,7 +70,6 @@ colorDistances = reshape(colorDistances, [], colorsCount);
 minimumColorDistance = min(colorDistances);
 minimumColorDistanceEqualMatrix = repmat(minimumColorDistance, definedColorsCount, 1);
 logicals = (minimumColorDistanceEqualMatrix == colorDistances);
-%logicals = (min(colorDistances) == colorDistances); % emmits a warning
 % result:
 % 1     0     1
 % 0     1     0
@@ -73,22 +84,3 @@ labColors = labColors(logicals, :);
 % 8 8
 % 9 9
 endfunction
-
-
-
-%function nearestColor_index = getNearestColor (color)
-%
-%% get the list of our colors defined.
-%definedColors = getDefinedColorsLab();
-%
-%% iterate through each color defined, get its Lab-color, and calculate the DeltaE2000 to our given pixel-color
-%for i = 1:length(definedColors)
-%  labColor(i,:) = [definedColors(i).L, definedColors(i).a, definedColors(i).b];
-%end
-%color = repmat(color, length(labColor), 1);
-%colorDistances = deltaE2000(color, labColor);
-%
-%% get the index of the minimum color distance
-%nearestColor_index = find(colorDistances == min(colorDistances));
-%
-%endfunction

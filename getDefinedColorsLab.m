@@ -1,4 +1,16 @@
-function [labColors] = getDefinedColorsLab ()
+function labColors = getDefinedColorsLab ()
+% getDefinedColorsLab  gets a list of predefined L*a*b* colors
+%
+% SYNOPSIS: labColors = getDefinedColorsLab()
+%
+% OUTPUT labColors: array of color struct with predefined colors (see createLabColor())
+%
+% SEE ALSO getDefinedColors, createLabColor
+%
+% created by: Marc V. Kohaupt
+% Licence: Creative Commons Zero / public domain
+% last change and history: see version control system
+% created with Octave 3.8.2 i686-w64-mingw32
 
 definedColors = getDefinedColors();
 

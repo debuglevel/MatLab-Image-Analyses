@@ -21,6 +21,8 @@ function [L,a,b] = RGB2Lab(R,G,B)
 % Updated for MATLAB 5 28 January 1998.
 % Updated for MATLAB 7 30 March 2009.
 
+% REMARKS code covered by the BSD licence as of http://www.mathworks.com/matlabcentral/fileexchange/24009-rgb2lab
+
 if nargin == 1
   B = double(R(:,:,3));
   G = double(R(:,:,2));

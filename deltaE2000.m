@@ -1,4 +1,19 @@
 function de00 = deltaE2000(Labstd, Labsample, KLCH)
+% deltaE2000  compute the CIEDE2000 color-difference between a Standard and a Sample
+%
+% SYNOPSIS: colorDifference = deltaE2000(LabStd, LabSample, KLCH)
+%
+% INPUT LabStd: L*a*b* color to compare the sample to (1x3 or N x 3 matrix)
+%       LabSample: L*a*b* color to compute the distance to the standard (1x3 or N x 3 matrix)
+%       KLCH: (optional) parametric weighting factors kL, kC, and kH. Defaults to 1.
+%
+% OUTPUT de00: CIEDE2000 color difference
+%
+% REMARKS original available at http://www.ece.rochester.edu/~gsharma/ciede2000/dataNprograms/deltaE2000.m
+%         created and published by G. Sharma, W. Wu, E. N. Dalal, Color Research and Application, vol. 30. No. 1, February 2005.
+%         minor changes by Marc V. Kohaupt
+%
+
 % Compute the CIEDE2000 color-difference between the sample between a reference
 % with CIELab coordinates Labsample and a standard with CIELab coordinates 
 % Labstd
