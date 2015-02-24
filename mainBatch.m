@@ -39,7 +39,7 @@ for file = files'
   fflush(stdout);  % flush stdout buffer as the next operation takes probably long time
 
   stopwatch.file.begin = cputime();
-  colorStatsMain(filename);
+  getColorStatistics(filename);
   stopwatch.file.end = cputime();
 
   msg = sprintf('%s\t Processed \t%s\t in \t%f\t seconds.\n', datestr(now, 'YYYY-mm-DD HH:MM:SS'), filename, stopwatch.file.end - stopwatch.file.begin);

@@ -1,7 +1,7 @@
-function colorStatsMain (filename)
-% colorStatsMain  main function to process a given file
+function getColorStatistics (filename)
+% getColorStatistics  main function to process a given file
 %
-% SYNOPSIS: colorStatsMain(filename)
+% SYNOPSIS: getColorStatistics(filename)
 %
 % INPUT filename: path to the picture to process
 %
