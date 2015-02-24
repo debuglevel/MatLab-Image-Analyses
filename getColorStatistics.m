@@ -10,26 +10,27 @@ function getColorStatistics (filename)
 % last change and history: see version control system
 % created with Octave 3.8.2 i686-w64-mingw32
 
-% read image file
-[RGB, map, alpha] = imread(filename);
-
-% convert RGB to L*a*b*-Colorspace
-Lab = RGB2Lab(RGB);
-RGB = []; % free memory
-
-% convert 3D Array to 2D Array (just a list of 3x color)
-array_size_y = size(Lab)(1);
-array_size_x = size(Lab)(2);
-Lab = reshape(Lab, [array_size_x * array_size_y, 3]);
-
-% Remove transparent values. Keep only those rows where alpha is not 0 (i.e. 100% transparent).
-[alpha_size_x, alpha_size_y] = size(alpha);
-if (alpha_size_x != 0 && alpha_size_y != 0)
-  alpha = reshape(alpha, [array_size_x * array_size_y, 1]);
-  Lab = Lab(alpha != 0, :);
-end
-map = []; % free memory
-alpha = []; % free memory
+%% read image file
+%[RGB, map, alpha] = imread(filename);
+%
+%% convert RGB to L*a*b*-Colorspace
+%Lab = RGB2Lab(RGB);
+%RGB = []; % free memory
+%
+%% convert 3D Array to 2D Array (just a list of 3x color)
+%array_size_y = size(Lab)(1);
+%array_size_x = size(Lab)(2);
+%Lab = reshape(Lab, [array_size_x * array_size_y, 3]);
+%
+%% Remove transparent values. Keep only those rows where alpha is not 0 (i.e. 100% transparent).
+%[alpha_size_x, alpha_size_y] = size(alpha);
+%if (alpha_size_x != 0 && alpha_size_y != 0)
+%  alpha = reshape(alpha, [array_size_x * array_size_y, 1]);
+%  Lab = Lab(alpha != 0, :);
+%end
+%map = []; % free memory
+%alpha = []; % free memory
+Lab = getLabImage(filename);
 
 
 % Lab:        A x 3 matrix (A pixels; pixel = 3 columns of L*a*b color information)

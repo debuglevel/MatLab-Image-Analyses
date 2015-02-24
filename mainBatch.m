@@ -44,6 +44,10 @@ for file = files'
   getColorStatistics(filename);
   printf('\n');
   
+  [luminance] = getLuminance(filename);
+  printf('Luminance: %f\n', luminance);
+  printf('\n');
+  
   printf("Dimensions of the picture:\n", width);
   [width, height] = getImageDimensions(filename);
   printf("  Width:\t %i\n", width);
