@@ -18,8 +18,8 @@ Lab = RGB2Lab(RGB);
 RGB = []; % free memory
 
 % convert 3D Array to 2D Array (just a list of 3x color)
-array_size_x = size(Lab)(1);
-array_size_y = size(Lab)(2);
+array_size_y = size(Lab)(1);
+array_size_x = size(Lab)(2);
 Lab = reshape(Lab, [array_size_x * array_size_y, 3]);
 
 % Remove transparent values. Keep only those rows where alpha is not 0 (i.e. 100% transparent).
@@ -57,6 +57,9 @@ uniqueNearestColorWithCount = [uniqueNearestColor accumarray(index, count)];
 % get a list of all our colors defined.
 definedColors = getDefinedColorsLab();
 totalCount = sum(uniqueNearestColorWithCount(:, 4));
+
+printf('Distribution of pre-defined colors:\n');
+
 for i = 1:length(definedColors)
   
   L = definedColors(i).L;

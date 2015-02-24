@@ -39,7 +39,18 @@ for file = files'
   fflush(stdout);  % flush stdout buffer as the next operation takes probably long time
 
   stopwatch.file.begin = cputime();
+  
+  
   getColorStatistics(filename);
+  printf('\n');
+  
+  printf("Dimensions of the picture:\n", width);
+  [width, height] = getImageDimensions(filename);
+  printf("  Width:\t %i\n", width);
+  printf("  Height:\t %i\n", height);
+  printf('');
+  
+  
   stopwatch.file.end = cputime();
 
   msg = sprintf('%s\t Processed \t%s\t in \t%f\t seconds.\n', datestr(now, 'YYYY-mm-DD HH:MM:SS'), filename, stopwatch.file.end - stopwatch.file.begin);
