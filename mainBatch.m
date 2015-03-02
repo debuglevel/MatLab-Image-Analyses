@@ -41,20 +41,9 @@ for file = files'
   stopwatch.file.begin = cputime();
   
   
-  getColorStatistics(filename);
-  printf('\n');
+  processPicture(filename);
   
-  [luminance] = getLuminance(filename);
-  printf('Luminance: %f\n', luminance);
-  printf('\n');
-  
-  printf("Dimensions of the picture:\n", width);
-  [width, height] = getImageDimensions(filename);
-  printf("  Width:\t %i\n", width);
-  printf("  Height:\t %i\n", height);
-  printf('');
-  
-  
+ 
   stopwatch.file.end = cputime();
 
   msg = sprintf('%s\t Processed \t%s\t in \t%f\t seconds.\n', datestr(now, 'YYYY-mm-DD HH:MM:SS'), filename, stopwatch.file.end - stopwatch.file.begin);

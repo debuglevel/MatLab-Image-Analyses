@@ -20,4 +20,7 @@ colors(++i) = createColor("rot", 255, 0, 0);
 colors(++i) = createColor("weiss", 255, 255, 255);
 colors(++i) = createColor("schwarz", 0, 0, 0);
 
+%colors(++i) = createColor("hellblau", 124, 124, 255);
+%colors(++i) = createColor("ocker", 150, 128, 70);
+
 endfunction
