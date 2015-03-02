@@ -10,6 +10,9 @@
 %%% configuration %%%
 %%%%%%%%%%%%%%%%%%%%%
 
+% uncomment if the environment should be cleared before execution
+clear;
+
 % the directory where the pictures are stored
 picture_directory = "./pics/";
 
@@ -41,8 +44,8 @@ for file = files'
   stopwatch.file.begin = cputime();
   
   
-  processPicture(filename);
-  
+  pictures(end+1) = processPicture(filename);
+    
  
   stopwatch.file.end = cputime();
 
@@ -52,6 +55,8 @@ for file = files'
 
   printf("\n");
 end
+
+printPicturesStructArray(pictures);
 
 stopwatch.batch.end = cputime();
 printf('Processed whole batch in %f seconds.\n', stopwatch.batch.end - stopwatch.batch.begin);
