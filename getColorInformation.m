@@ -1,9 +1,9 @@
 function [number_of_colors, unique_Lab_colors, unique_LabColors_with_count, aggregatedCounts] = getColorInformation (filename)
-% getColorInformation  gets information about unique colors used in a picture
+% getColorInformation  gets information about unique colors used in an image
 %
 % SYNOPSIS: getColorInformation(filename)
 %
-% INPUT filename: path to the picture to process
+% INPUT filename: path to the image to process
 %
 % created by: Marc V. Kohaupt
 % Licence: Creative Commons Zero / public domain

@@ -10,8 +10,6 @@ function labColor = createLabColor (name, L, a, b)
 %
 % OUTPUT color: struct consisting of a name, L* a* b* values and a count 
 %
-% REMARKS the count field is not used at the moment and may be removed in the future
-%
 % SEE ALSO createLabColor
 %
 % created by: Marc V. Kohaupt
@@ -23,6 +21,6 @@ labColor.name = name;
 labColor.L = L;
 labColor.a = a;
 labColor.b = b;
-labColor.count = 0;
+%labColor.count = 0;
 
 endfunction

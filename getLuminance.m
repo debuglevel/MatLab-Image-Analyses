@@ -1,9 +1,9 @@
 function [luminance] = getLuminance (filename)
-% getLuminance  gets the luminance of a picture
+% getLuminance  gets the luminance of an image
 %
 % SYNOPSIS: getLuminance(filename)
 %
-% INPUT filename: path to the picture to process
+% INPUT filename: path to the image to process
 %
 % created by: Marc V. Kohaupt
 % Licence: Creative Commons Zero / public domain

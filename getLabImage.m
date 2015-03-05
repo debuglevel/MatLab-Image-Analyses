@@ -3,7 +3,7 @@ function [Lab] = getLabImage (filename)
 %
 % SYNOPSIS: getLabImage(filename)
 %
-% INPUT filename: path to the picture
+% INPUT filename: path to the image
 %
 % created by: Marc V. Kohaupt
 % Licence: Creative Commons Zero / public domain

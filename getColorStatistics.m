@@ -3,7 +3,7 @@ function getColorStatistics (filename)
 %
 % SYNOPSIS: getColorStatistics(filename)
 %
-% INPUT filename: path to the picture to process
+% INPUT filename: path to the image to process
 %
 % created by: Marc V. Kohaupt
 % Licence: Creative Commons Zero / public domain

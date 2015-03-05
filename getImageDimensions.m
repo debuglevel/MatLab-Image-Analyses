@@ -1,9 +1,9 @@
 function [width, height] = getImageDimensions (filename)
-% getImageDimensions  gets the width and height of an picture
+% getImageDimensions  gets the width and height of an image
 %
 % SYNOPSIS: getImageDimensions(filename)
 %
-% INPUT filename: path to the picture to process
+% INPUT filename: path to the image to process
 %
 % created by: Marc V. Kohaupt
 % Licence: Creative Commons Zero / public domain

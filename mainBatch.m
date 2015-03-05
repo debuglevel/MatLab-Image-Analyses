@@ -13,8 +13,8 @@
 % uncomment if the environment should be cleared before execution
 clear;
 
-% the directory where the pictures are stored
-picture_directory = "./pics/";
+% the directory where the images are stored
+images_directory = "./pics/";
 
 % whether the code should be profiled regarding CPU time needed
 % (the cpu time for the whole batch and per file will always be logged)
@@ -34,20 +34,18 @@ end
 stopwatch.batch.begin = cputime();
 
 % iterate through all files in the given directory
-files = dir([picture_directory '*.*']);
+files = dir([images_directory '*.*']);
 for file = files'
-  filename = [picture_directory file.name];
+  filename = [images_directory file.name];
 
   printf("%s \t Processing \t%s ...\n", datestr(now, 'YYYY-mm-DD HH:MM:SS'), filename)
   fflush(stdout);  % flush stdout buffer as the next operation takes probably long time
 
   stopwatch.file.begin = cputime();
-  
-  
-  pictures(end+1) = processPicture(filename);
-    
- 
+  images(end+1) = processImage(filename);
   stopwatch.file.end = cputime();
+  stopwatch.file.duration = stopwatch.file.end - stopwatch.file.begin;
+  images(end).duration = stopwatch.file.duration;
 
   msg = sprintf('%s\t Processed \t%s\t in \t%f\t seconds.\n', datestr(now, 'YYYY-mm-DD HH:MM:SS'), filename, stopwatch.file.end - stopwatch.file.begin);
   printf(msg);
@@ -56,7 +54,7 @@ for file = files'
   printf("\n");
 end
 
-printPicturesStructArray(pictures);
+printImagesStructArray(images);
 
 stopwatch.batch.end = cputime();
 printf('Processed whole batch in %f seconds.\n', stopwatch.batch.end - stopwatch.batch.begin);

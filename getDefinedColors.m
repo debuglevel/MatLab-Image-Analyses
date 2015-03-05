@@ -12,15 +12,13 @@ function colors = getDefinedColors ()
 % last change and history: see version control system
 % created with Octave 3.8.2 i686-w64-mingw32
 
-i = 0;
+colors(end+1) = createColor("blau", 0, 0, 255);
+colors(end+1) = createColor("gruen", 0, 255, 0);
+colors(end+1) = createColor("rot", 255, 0, 0);
+colors(end+1) = createColor("weiss", 255, 255, 255);
+colors(end+1) = createColor("schwarz", 0, 0, 0);
 
-colors(++i) = createColor("blau", 0, 0, 255);
-colors(++i) = createColor("gruen", 0, 255, 0);
-colors(++i) = createColor("rot", 255, 0, 0);
-colors(++i) = createColor("weiss", 255, 255, 255);
-colors(++i) = createColor("schwarz", 0, 0, 0);
-
-%colors(++i) = createColor("hellblau", 124, 124, 255);
-%colors(++i) = createColor("ocker", 150, 128, 70);
+%colors(end+1) = createColor("hellblau", 124, 124, 255);
+%colors(end+1) = createColor("ocker", 150, 128, 70);
 
 endfunction

@@ -1,9 +1,9 @@
 function [contrast] = getContrast (filename)
-% getContrast  gets the contrast of a picture
+% getContrast  gets the contrast of an image
 %
 % SYNOPSIS: getContrast(filename)
 %
-% INPUT filename: path to the picture to process
+% INPUT filename: path to the image to process
 %
 % created by: Marc V. Kohaupt
 % Licence: Creative Commons Zero / public domain
