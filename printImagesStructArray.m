@@ -16,4 +16,8 @@ fprintf('%45s | %5s | %6s | %6s | %9s | %8s | %9s | %8s\n', "-------------------
 fprintf('%-45s | %5i | %6i | %6i | %9.1f | %8.2f | %9i | %8.1f\n', cellData{:});  %# Print the data
 fprintf('\n');
 
+% CSV
+%fprintf('%s, %s, %s, %s, %s, %s, %s, %s\n', "file name", "width", "height", "colors", "luminance", "contrast", "file size", "duration");  %# Print the data
+%fprintf('%s, %i, %i, %i, %f, %f, %i, %f\n', cellData{:});  %# Print the data
+
 endfunction
