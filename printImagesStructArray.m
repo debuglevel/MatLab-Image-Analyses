@@ -10,14 +10,20 @@ function [image] = printImagesStructArray (imagesStructArray)
 % last change and history: see version control system
 % created with Octave 3.8.1 i686-pc-linux-gnu
 
-cellData = struct2cell(imagesStructArray);         %# A 3-by-3 cell array
-fprintf('%45s | %5s | %6s | %6s | %9s | %8s | %9s | %8s\n', "file name", "width", "height", "colors", "luminance", "contrast", "file size", "duration");  %# Print the data
-fprintf('%45s | %5s | %6s | %6s | %9s | %8s | %9s | %8s\n', "---------------------------------------------", "-----", "------", "------", "---------", "--------", "---------", "--------");  %# Print the data
+cellData = struct2cell(imagesStructArray);
+fprintf('%45s | %5s | %6s | %6s | %9s | %8s | %9s | %8s\n', "file name", "width", "height", "colors", "luminance", "contrast", "file size", "duration");
+fprintf('%45s | %5s | %6s | %6s | %9s | %8s | %9s | %8s\n', "---------------------------------------------", "-----", "------", "------", "---------", "--------", "---------", "--------");
 fprintf('%-45s | %5i | %6i | %6i | %9.1f | %8.2f | %9i | %8.1f\n', cellData{:});  %# Print the data
 fprintf('\n');
 
+
 % CSV
-%fprintf('%s, %s, %s, %s, %s, %s, %s, %s\n', "file name", "width", "height", "colors", "luminance", "contrast", "file size", "duration");  %# Print the data
-%fprintf('%s, %i, %i, %i, %f, %f, %i, %f\n', cellData{:});  %# Print the data
+fileHandler = fopen("results.csv", 'w');
+
+if fileHandler ~= -1
+  fprintf(fileHandler, '%s, %s, %s, %s, %s, %s, %s, %s\n', "file name", "width", "height", "colors", "luminance", "contrast", "file size", "duration");
+  fprintf(fileHandler, '%s, %i, %i, %i, %f, %f, %i, %f\n', cellData{:});  %# Print the data
+  fclose(fileHandler);
+end
 
 endfunction
