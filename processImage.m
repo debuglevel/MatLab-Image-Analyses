@@ -13,12 +13,14 @@ function [image] = processImage(filename)
 image.filename = filename;
 
 printf("Dimensions of the image:\n");
-[width, height] = getImageDimensions(filename);
+[width, height, aspectratio] = getImageDimensions(filename);
 printf("  Width:\t %i\n", width);
 printf("  Height:\t %i\n", height);
+printf("  Aspect ratio:\t %f\n", aspectratio);
 printf('\n');
 image.width = width;
 image.height = height;
+image.aspectratio = aspectratio;
 
 printf("Color Depth:\n");
 [colordepth, unused, unused] = getColorInformation(filename);

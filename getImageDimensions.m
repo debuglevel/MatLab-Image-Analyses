@@ -1,4 +1,4 @@
-function [width, height] = getImageDimensions (filename)
+function [width, height, aspectratio] = getImageDimensions (filename)
 % getImageDimensions  gets the width and height of an image
 %
 % SYNOPSIS: getImageDimensions(filename)
@@ -16,5 +16,6 @@ function [width, height] = getImageDimensions (filename)
 % get dimensions
 height = size(RGB)(1);
 width = size(RGB)(2);
+aspectratio = width / height;
 
 endfunction
