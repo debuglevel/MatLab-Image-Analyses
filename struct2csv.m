@@ -21,6 +21,7 @@ if fd == -1
   error(['Could not open "' filename '" for writing.']);
 end
 
+fprintf(fd, '"%s"\n', strjoin(labels, '";"'));
 %if nargin < 3 || header
 %  fprintf(fd, '%s\n', strjoin(labels, ', '));
 %end

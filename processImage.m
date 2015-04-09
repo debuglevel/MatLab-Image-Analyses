@@ -46,7 +46,14 @@ image.filesize = filesize;
 
 image.duration = NaN;
 
-getColorStatistics(filename);
+printf('Distribution of predefined colors:\n');
+[colorDistribution] = getColorStatistics(filename);
+for i = 1:length(colorDistribution)
+  printf('%18s: %3d%%\n', colorDistribution(i).name, colorDistribution(i).percentage);
+  image.(['color: ' colorDistribution(i).name]) = colorDistribution(i).percentage;
+end
+printf('\n');
+
 printf('\n');
 
 endfunction

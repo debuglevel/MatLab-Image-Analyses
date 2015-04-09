@@ -53,6 +53,10 @@ printf("    Mean Square Error = %f = %f^2\n", mse, sqrt(mse));
 
 
 contrast = 1 - mse;
+% contrast is between 0.75 and 1.00
+% normalize to [0 - 1]
+contrast = (contrast - 0.75) * 4;
+
 %mdl = fitlm(X,y) %not implemented in octave
 
 %pkg unload nan

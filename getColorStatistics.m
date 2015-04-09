@@ -1,5 +1,5 @@
-function getColorStatistics (filename)
-% getColorStatistics  main function to process a given file
+function [colorDistribution] = getColorStatistics (filename)
+% getColorStatistics  get the distribution of certain predefined colors in an image
 %
 % SYNOPSIS: getColorStatistics(filename)
 %
@@ -27,7 +27,7 @@ uniqueNearestColorWithCount = [uniqueNearestColor accumarray(index, count)];
 definedColors = getDefinedColorsLab();
 totalCount = sum(uniqueNearestColorWithCount(:, 4));
 
-printf('Distribution of pre-defined colors:\n');
+%printf('Distribution of pre-defined colors:\n');
 
 for i = 1:length(definedColors)
   
@@ -45,12 +45,15 @@ for i = 1:length(definedColors)
   % check if the defined color is used at all  
   if (size(color, 1) != 0)
     count = color(4);
-    
-    %printf('%10s: %d\n', definedColors(i).name, count);
-    
-    percentage = count / totalCount * 100;
-    printf('%10s: %3d%%\n', definedColors(i).name, percentage);
+  else
+    count = 0;
   end
+    
+  percentage = count / totalCount * 100;
+  %printf('%18s: %3d%%\n', definedColors(i).name, percentage);
+  
+  colorDistribution(end+1).name = definedColors(i).name;
+  colorDistribution(end).percentage = percentage;
 end
 
 endfunction
