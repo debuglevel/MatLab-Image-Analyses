@@ -13,6 +13,11 @@ function [Lab] = getLabImage (filename)
 % read image file
 [RGB, map, alpha] = imread(filename);
 
+% apply map if existing (e.g. 256 colors PNG files without transparency)
+if ~isempty(map)
+  RGB = ind2rgb(RGB, map);
+end
+
 % convert RGB to L*a*b*-Colorspace
 Lab = RGB2Lab(RGB);
 RGB = []; % free memory
