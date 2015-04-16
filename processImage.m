@@ -12,6 +12,20 @@ function [image] = processImage(filename)
 
 image.filename = filename;
 
+printf("Metadata of the image:\n");
+[city, citybrewery, state, year, extension] = getImageMetadata(filename);
+printf("  City:\t %s\n", city);
+printf("  Brewery within city:\t %s\n", citybrewery);
+printf("  State of Germany:\t %s\n", state);
+printf("  Year:\t %s\n", year);
+printf("  extension:\t %s\n", extension);
+printf('\n');
+image.city = city;
+image.citybrewery = citybrewery;
+image.state = state;
+image.year = year;
+image.extension = extension;
+
 printf("Dimensions of the image:\n");
 [width, height, aspectratio] = getImageDimensions(filename);
 printf("  Width:\t %i\n", width);
