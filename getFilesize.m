@@ -13,4 +13,4 @@ function [size] = getFilesize (filename)
 info = dir(filename);
 size = info.bytes;
 
-endfunction
+end

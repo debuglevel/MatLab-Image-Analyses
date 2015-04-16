@@ -20,4 +20,4 @@ for i = 1:length(definedColors)
   labColors(i) = createLabColor(definedColors(i).name, L, a, b);
 end
 
-endfunction
+end

@@ -14,7 +14,9 @@ function [contrast] = getContrast (filename)
 % cumulative histogram of image.
 
 % needed for ecdf()
-pkg load nan
+if (isOctave())
+  pkg load nan
+end
 
 Lab = getLabImage(filename);
 L = Lab(:,1);
@@ -29,10 +31,10 @@ theta = (pinv(X_values'*X_values))*X_values'*f_values;
 theta_a = theta(2);
 theta_b = theta(1);
 
-printf('Contrast:\n');
-printf('  Linear Regression of Brightness:\n');
-printf('    y = %f * x + %f\n', theta_a, theta_b);
-printf('    where (y = 1 * x + 0) would be the optimal function\n');
+fprintf('Contrast:\n');
+fprintf('  Linear Regression of Brightness:\n');
+fprintf('    y = %f * x + %f\n', theta_a, theta_b);
+fprintf('    where (y = 1 * x + 0) would be the optimal function\n');
 
 linreg = @(x) theta_a*x + theta_b;
 step_width = 1/m;
@@ -48,8 +50,8 @@ f_opt_values = opt(x_values);
 difference = abs(f_linreg_values - f_opt_values) .^ 2;
 mse = sum(difference(:)) / numel(f_linreg_values);
 
-printf('  Difference between linear regression and optimal function:\n');
-printf('    Mean Square Error = %f = %f^2\n', mse, sqrt(mse));
+fprintf('  Difference between linear regression and optimal function:\n');
+fprintf('    Mean Square Error = %f = %f^2\n', mse, sqrt(mse));
 
 
 contrast = 1 - mse;
@@ -67,4 +69,4 @@ contrast = (contrast - 0.75) * 4;
 %diffImage = conv2(double(grayImage), kernel, 'same');
 %cpp = mean2(diffImage);
 
-endfunction
+end

@@ -23,4 +23,4 @@ labColor.a = a;
 labColor.b = b;
 %labColor.count = 0;
 
-endfunction
+end

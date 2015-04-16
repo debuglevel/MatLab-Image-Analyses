@@ -14,8 +14,9 @@ function [width, height, aspectratio] = getImageDimensions (filename)
 [RGB, map, alpha] = imread(filename);
 
 % get dimensions
-height = size(RGB)(1);
-width = size(RGB)(2);
+image_size = size(RGB);
+height = image_size(1);
+width = image_size(2);
 aspectratio = width / height;
 
-endfunction
+end

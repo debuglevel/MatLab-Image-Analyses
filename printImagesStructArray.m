@@ -20,7 +20,7 @@ function [image] = printImagesStructArray (imagesStructArray)
 % CSV
 filename = 'results.csv';
 struct2csv(imagesStructArray, filename);
-printf('Output written to CSV file %s. Please open it with Excel or something similar.', filename);
+fprintf('Output written to CSV file %s. Please open it with Excel or something similar.', filename);
 
 %fileHandler = fopen("results.csv", 'w');
 
@@ -33,4 +33,4 @@ printf('Output written to CSV file %s. Please open it with Excel or something si
 
 
 
-endfunction
+end

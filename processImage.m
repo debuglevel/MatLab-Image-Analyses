@@ -1,4 +1,4 @@
-function [image] = processImage(filename)
+function [image] = processImage(path)
 % processImage  applies certain analysis to an image
 %
 % SYNOPSIS: processImage(filename)
@@ -10,17 +10,19 @@ function [image] = processImage(filename)
 % last change and history: see version control system
 % created with Octave 3.8.1 i686-pc-linux-gnu
 
-image.filename = filename;
+image.path = path;
 
-printf('Metadata of the image:\n');
-[city, citybrewery, state, year, subyear, extension] = getImageMetadata(filename);
-printf('  City:\t\t\t %s\n', city);
-printf('  Brewery within city:\t %s\n', citybrewery);
-printf('  State of Germany:\t %s\n', state);
-printf('  Year:\t\t\t %s\n', year);
-printf('  Sub-Year:\t\t %s\n', subyear);
-printf('  extension:\t\t %s\n', extension);
-printf('\n');
+fprintf('Metadata of the image:\n');
+[filename, city, citybrewery, state, year, subyear, extension] = getImageMetadata(path);
+fprintf('  Filename:\t\t %s\n', filename)
+fprintf('  City:\t\t\t %s\n', city)
+fprintf('  Brewery within city:\t %s\n', citybrewery)
+fprintf('  State of Germany:\t %s\n', state)
+fprintf('  Year:\t\t\t %s\n', year)
+fprintf('  Sub-Year:\t\t %s\n', subyear)
+fprintf('  extension:\t\t %s\n', extension)
+fprintf('\n');
+image.filename = filename;
 image.city = city;
 image.citybrewery = citybrewery;
 image.state = state;
@@ -28,48 +30,48 @@ image.year = year;
 image.subyear = subyear;
 image.extension = extension;
 
-printf('Dimensions of the image:\n');
-[width, height, aspectratio] = getImageDimensions(filename);
-printf('  Width:\t %i\n', width);
-printf('  Height:\t %i\n', height);
-printf('  Aspect ratio:\t %f\n', aspectratio);
-printf('\n');
+fprintf('Dimensions of the image:\n');
+[width, height, aspectratio] = getImageDimensions(path);
+fprintf('  Width:\t %i\n', width);
+fprintf('  Height:\t %i\n', height);
+fprintf('  Aspect ratio:\t %f\n', aspectratio);
+fprintf('\n');
 image.width = width;
 image.height = height;
 image.aspectratio = aspectratio;
 
-printf('Color Depth:\n');
-[colordepth, unused, unused] = getColorInformation(filename);
-printf('  Number of Colors:\t %i\n', colordepth);
-printf('\n');
+fprintf('Color Depth:\n');
+[colordepth, unused, unused] = getColorInformation(path);
+fprintf('  Number of Colors:\t %i\n', colordepth);
+fprintf('\n');
 image.colordepth = colordepth;
 
-[luminance] = getLuminance(filename);
-printf('Luminance:\t %f\n', luminance);
-printf('\n');
+[luminance] = getLuminance(path);
+fprintf('Luminance:\t %f\n', luminance);
+fprintf('\n');
 image.luminance = luminance;
 
-[contrast] = getContrast(filename);
-printf('Contrast:\t %f\n', contrast);
-printf('\n');
+[contrast] = getContrast(path);
+fprintf('Contrast:\t %f\n', contrast);
+fprintf('\n');
 image.contrast = contrast;
 
-printf('File size of the image:\n');
-[filesize] = getFilesize(filename);
-printf('  File size:\t %i Bytes\n', filesize);
-printf('\n');
+fprintf('File size of the image:\n');
+[filesize] = getFilesize(path);
+fprintf('  File size:\t %i Bytes\n', filesize);
+fprintf('\n');
 image.filesize = filesize;
 
 image.duration = NaN;
 
-printf('Distribution of predefined colors:\n');
-[colorDistribution] = getColorStatistics(filename);
+fprintf('Distribution of predefined colors:\n');
+[colorDistribution] = getColorStatistics(path);
 for i = 1:length(colorDistribution)
-  printf('%18s: %3d%%\n', colorDistribution(i).name, colorDistribution(i).percentage);
-  image.(['color: ' colorDistribution(i).name]) = colorDistribution(i).percentage;
+  fprintf('%18s: %3d%%\n', colorDistribution(i).name, colorDistribution(i).percentage);
+  image.(['color__' colorDistribution(i).name]) = colorDistribution(i).percentage;
 end
-printf('\n');
+fprintf('\n');
 
-printf('\n');
+fprintf('\n');
 
-endfunction
+end

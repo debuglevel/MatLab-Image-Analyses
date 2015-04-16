@@ -23,6 +23,7 @@ aggregatedCounts = [accumarray(index, 1)];
 unique_LabColors_with_count = [unique_Lab_colors aggregatedCounts];
 
 % get number of rows
-number_of_colors = size(unique_Lab_colors)(1);
+size_temp = size(unique_Lab_colors);
+number_of_colors = size_temp(1);
 
-endfunction
+end

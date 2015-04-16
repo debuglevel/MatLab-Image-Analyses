@@ -38,4 +38,4 @@ luminance = luminance / 100;
 %    ) 
 %  )
 
-endfunction
+end

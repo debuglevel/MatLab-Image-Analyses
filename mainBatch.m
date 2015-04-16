@@ -14,7 +14,11 @@
 clear;
 
 % the directory where the images are stored
-images_directory = "./pics/";
+images_directory = './pics/';
+
+% the wildcard pattern which should be indexed.
+% note that "*.*" also matches "." and ".." and therefore does not work.
+images_pattern = '*.png';
 
 % whether the code should be profiled regarding CPU time needed
 % (the cpu time for the whole batch and per file will always be logged)
@@ -34,30 +38,38 @@ end
 stopwatch.batch.begin = cputime();
 
 % iterate through all files in the given directory
-files = dir([images_directory '*.*']);
+files = dir([images_directory images_pattern]);
+
 for file = files'
   filename = [images_directory file.name];
 
-  printf('%s \t Processing \t%s ...\n', datestr(now, 'YYYY-mm-DD HH:MM:SS'), filename)
-  fflush(stdout);  % flush stdout buffer as the next operation takes probably long time
+  fprintf('%s \t Processing \t%s ...\n', datestr(now, 'YYYY-mm-DD HH:MM:SS'), filename)
+  if (isOctave())
+    fflush(stdout);  % flush stdout buffer as the next operation takes probably long time
+  end
 
   stopwatch.file.begin = cputime();
-  images(end+1) = processImage(filename);
+  if (exist('images'))
+    images(end+1) = processImage(filename);
+  else
+    images(1) = processImage(filename);
+  end
+  
   stopwatch.file.end = cputime();
   stopwatch.file.duration = stopwatch.file.end - stopwatch.file.begin;
   images(end).duration = stopwatch.file.duration;
 
   msg = sprintf('%s\t Processed \t%s\t in \t%f\t seconds.\n', datestr(now, 'YYYY-mm-DD HH:MM:SS'), filename, stopwatch.file.end - stopwatch.file.begin);
-  printf(msg);
+  fprintf(msg);
   logfile('performance.txt', msg);
 
-  printf('\n');
+  fprintf('\n');
 end
 
 printImagesStructArray(images);
 
 stopwatch.batch.end = cputime();
-printf('Processed whole batch in %f seconds.\n', stopwatch.batch.end - stopwatch.batch.begin);
+fprintf('Processed whole batch in %f seconds.\n', stopwatch.batch.end - stopwatch.batch.begin);
 
 if (profiling.on == 1)
   profile off;

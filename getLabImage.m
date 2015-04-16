@@ -23,17 +23,18 @@ Lab = RGB2Lab(RGB);
 RGB = []; % free memory
 
 % convert 3D Array to 2D Array (just a list of 3x color)
-array_size_y = size(Lab)(1);
-array_size_x = size(Lab)(2);
+size_temp = size(Lab);
+array_size_y = size_temp(1);
+array_size_x = size_temp(2);
 Lab = reshape(Lab, [array_size_x * array_size_y, 3]);
 
 % Remove transparent values. Keep only those rows where alpha is not 0 (i.e. 100% transparent).
 [alpha_size_x, alpha_size_y] = size(alpha);
-if (alpha_size_x != 0 && alpha_size_y != 0)
+if (alpha_size_x ~= 0 && alpha_size_y ~= 0)
   alpha = reshape(alpha, [array_size_x * array_size_y, 1]);
-  Lab = Lab(alpha != 0, :);
+  Lab = Lab(alpha ~= 0, :);
 end
 map = []; % free memory
 alpha = []; % free memory
 
-endfunction
+end

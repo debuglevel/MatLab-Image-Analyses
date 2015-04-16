@@ -23,4 +23,4 @@ color.g = g;
 color.b = b;
 %color.count = 0;
 
-endfunction
+end

@@ -18,4 +18,4 @@ if fileHandler ~= -1
   fclose(fileHandler);
 end
 
-endfunction
+end

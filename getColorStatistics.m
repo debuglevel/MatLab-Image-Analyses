@@ -29,6 +29,7 @@ totalCount = sum(uniqueNearestColorWithCount(:, 4));
 
 %printf('Distribution of pre-defined colors:\n');
 
+colorDistribution = [];
 for i = 1:length(definedColors)
   
   L = definedColors(i).L;
@@ -43,7 +44,7 @@ for i = 1:length(definedColors)
     , :);
     
   % check if the defined color is used at all  
-  if (size(color, 1) != 0)
+  if (size(color, 1) ~= 0)
     count = color(4);
   else
     count = 0;
@@ -56,4 +57,4 @@ for i = 1:length(definedColors)
   colorDistribution(end).percentage = percentage / 100;
 end
 
-endfunction
+end

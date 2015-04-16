@@ -83,4 +83,4 @@ labColors = labColors(logicals, :);
 % 9 9
 % 8 8
 % 9 9
-endfunction
+end
