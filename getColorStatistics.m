@@ -53,7 +53,7 @@ for i = 1:length(definedColors)
   %printf('%18s: %3d%%\n', definedColors(i).name, percentage);
   
   colorDistribution(end+1).name = definedColors(i).name;
-  colorDistribution(end).percentage = percentage;
+  colorDistribution(end).percentage = percentage / 100;
 end
 
 endfunction

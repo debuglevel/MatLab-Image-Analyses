@@ -15,6 +15,7 @@ Lab = getLabImage(filename);
 L = Lab(:,1);
 Lab= []; % free memory
 luminance = mean(L);
+luminance = luminance / 100;
 
 % some other attempt to calculate luminance based on http://stackoverflow.com/questions/596216/formula-to-determine-brightness-of-rgb-color
 %[RGB, map, alpha] = imread(filename);
