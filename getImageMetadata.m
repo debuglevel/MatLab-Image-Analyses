@@ -1,4 +1,4 @@
-function [city, citybrewery, state, year, extension] = getImageMetadata (filename)
+function [city, citybrewery, state, year, subyear, extension] = getImageMetadata (filename)
 % getImageMetadata  gets the metadata of the image
 %
 % SYNOPSIS: getImageMetadata(filename)
@@ -11,12 +11,13 @@ function [city, citybrewery, state, year, extension] = getImageMetadata (filenam
 % created with Octave 3.8.1 i686-pc-linux-gnu
 
  
-matches = regexp(filename, './pics/([a-z_]*)_([0-9]*)_([a-z-]*)_([0-9]*)\.([a-z]*)', 'tokens');
+matches = regexp(filename, './pics/([a-z_]*)_([0-9]*)_([a-z-]*)_([0-9]*)([a-z]*)\.([a-z]*)', 'tokens');
 
 city = matches{1}{1};
 citybrewery = matches{1}{2};
 state = matches{1}{3};
 year = matches{1}{4};
-extension = matches{1}{5};
+subyear = matches{1}{5};
+extension = matches{1}{6};
  
 endfunction
