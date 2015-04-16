@@ -38,7 +38,7 @@ files = dir([images_directory '*.*']);
 for file = files'
   filename = [images_directory file.name];
 
-  printf("%s \t Processing \t%s ...\n", datestr(now, 'YYYY-mm-DD HH:MM:SS'), filename)
+  printf('%s \t Processing \t%s ...\n', datestr(now, 'YYYY-mm-DD HH:MM:SS'), filename)
   fflush(stdout);  % flush stdout buffer as the next operation takes probably long time
 
   stopwatch.file.begin = cputime();
@@ -49,9 +49,9 @@ for file = files'
 
   msg = sprintf('%s\t Processed \t%s\t in \t%f\t seconds.\n', datestr(now, 'YYYY-mm-DD HH:MM:SS'), filename, stopwatch.file.end - stopwatch.file.begin);
   printf(msg);
-  logfile("performance.txt", msg);
+  logfile('performance.txt', msg);
 
-  printf("\n");
+  printf('\n');
 end
 
 printImagesStructArray(images);
@@ -61,6 +61,6 @@ printf('Processed whole batch in %f seconds.\n', stopwatch.batch.end - stopwatch
 
 if (profiling.on == 1)
   profile off;
-  data = profile("info");
+  data = profile('info');
   profshow(data, 10);
 end

@@ -27,7 +27,7 @@ function [retval] = printDefinedColors ()
 colors = getDefinedColors();
 
 cellData = struct2cell(colors);
-fprintf("color, R, G, B\n");
+fprintf('color, R, G, B\n');
 fprintf('%s; %i; %i; %i\n', cellData{:});  %# Print the data
 fprintf('\n');
 
